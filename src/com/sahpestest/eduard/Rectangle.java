@@ -1,6 +1,6 @@
 package com.sahpestest.eduard;
 
-public class Rectangle extends Shape {
+class Rectangle extends Shape {
 
     double length;
     double width;
@@ -11,15 +11,12 @@ public class Rectangle extends Shape {
         this.length = length;
         this.width = width;
     }
-
     @Override
     double area() {
         return length*width;
     }
-
     @Override
     public String toString() {
         return "Rectangle color is " + super.color + " and area is " + area();
-
     }
 }

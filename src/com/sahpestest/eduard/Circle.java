@@ -9,15 +9,12 @@ class Circle extends Shape {
         System.out.println("Circle constructor called");
         this.radius = radius;
     }
-
     @Override
     double area(){
     return Math.PI * Math.pow(radius, 2);
     }
     @Override
     public String toString(){
-        return "Circle color is " + super.color + " and area is " + area();
+        return "Circle color is " + color + " and area is " + area();
     }
-
-
 }
